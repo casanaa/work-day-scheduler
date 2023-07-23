@@ -35,3 +35,7 @@ WHEN I refresh the page
 THEN the saved events persist
 
 Deployed site: https://casanaa.github.io/work-day-scheduler/ 
+
+
+![image](https://github.com/casanaa/work-day-scheduler/assets/133182324/99a98c59-f709-49da-886e-877e84510bc4)
+
