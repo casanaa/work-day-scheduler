@@ -14,6 +14,7 @@ header {
     color: #000000;
     border-left: 1px solid black;
     padding: 10px;
+    letter-spacing: 1px;
   }
   
   .description {
@@ -22,6 +23,7 @@ header {
   
   .time-block {
     border-radius: 15px;
+    text-align: center;
   }
   
   .row {
@@ -32,21 +34,27 @@ header {
     background-color: #ffffff;
     color: #000000;
     border-top: 1px dashed #000000;
+    padding-top: 27px;
+    padding-left: 10px;
+    font-size: larger;
   }
   
   .past {
     background-color: #d3d3d3;
     color: white;
+    border-radius: 15px;
   }
   
   .present {
     background-color: #ff6961;
     color: white;
+    border-radius: 15px;
   }
   
   .future {
     background-color: #77dd77;
     color: white;
+    border-radius: 15px;
   }
   
   .saveBtn {
@@ -58,7 +66,8 @@ header {
   }
   
   .saveBtn i:hover {
-    font-size: 20px;
+    font-size: 30px;
     transition: all 0.3s ease-in-out;
   }
+  
   
