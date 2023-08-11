@@ -1,11 +1,21 @@
-$(document).ready(function () {
-  console.log("Ready!");
+// Get the current date
+const currentDate = new Date();
+
+// Get references to the HTML element
+const currentDateElement = document.getElementById("currentDate");
+
+// Format the date as desired (for example, "August 11, 2023")
+const formattedDate = currentDate.toLocaleDateString("en-US", { 
+    year: "numeric", 
+    month: "long", 
+    day: "numeric" 
 });
 
-let now = moment().format("dddd, MMMM Do YYYY");
-let displayDate = document.getElementById("currentDay");
-displayDate.innerHTML = now;
-let currentHour = moment().format("HH");     
+// Set the formatted date as the content of the HTML element
+currentDateElement.textContent = formattedDate;
+
+
+   
   
   $(".time-div").each(function() {
     var timeDiv = $(this).attr("id").split("-")[1];
@@ -13,12 +23,13 @@ let currentHour = moment().format("HH");
     if (currentHour == timeDiv) {
         $(this).addClass("present");
         $(this).children(".description").addClass("present");
-
-    } else if (currentHour < timeDiv) {
+      } 
+    
+    else if (currentHour < timeDiv) {
         $(this).removeClass("present");
         $(this).addClass("future");
-
-    } else if (currentHour > timeDiv) {
+      } 
+      else if (currentHour > timeDiv) {
         $(this).removeClass("future");
         $(this).addClass("past");
     }
